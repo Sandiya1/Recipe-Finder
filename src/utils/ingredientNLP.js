@@ -11,11 +11,7 @@ const PLURAL_MAP = {
   eggs: "egg",
   chilies: "chili"
 };
-const INTENTS = {
-  spicy: ["chili", "pepper"],
-  healthy: ["salad", "grilled"],
-  sweet: ["dessert"]
-};
+
 
 export function parseIngredients(input) {
   if (!input) return { include: [], exclude: [] };
@@ -52,3 +48,4 @@ export function parseIngredients(input) {
 function normalize(word) {
   return PLURAL_MAP[word] || word;
 }
+
