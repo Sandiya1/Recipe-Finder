@@ -12,10 +12,7 @@ export default function FavoritesPage({
 }) {
   const [selectedRecipe, setSelectedRecipe] = useState(null);
 
-  const removeFromFavorites = (id) => {
-    setFavorites((prev) => prev.filter((r) => r.id !== id));
-    setSelectedRecipe(null);
-  };
+  
   
 
   return (
@@ -59,3 +56,4 @@ export default function FavoritesPage({
     </div>
   );
 }
+
