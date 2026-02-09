@@ -1,0 +1,27 @@
+.floating-icons {
+  position: fixed;
+  top: 20px;
+  right: 24px;
+  display: flex;
+  gap: 14px;
+  z-index: 1000;
+}
+
+.floating-icons a {
+  width: 44px;
+  height: 44px;
+  background: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+  transition: all 0.25s ease;
+}
+
+.floating-icons a:hover {
+  transform: scale(1.12);
+  background: #ffe5d6;
+}

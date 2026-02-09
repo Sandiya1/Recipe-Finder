@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&family=Poppins:wght@300;400;500&display=swap');
+
+:root {
+  --coral: #ff6b6b;
+  --peach: #ffa07a;
+  --mint: #98d8c8;
+  --lemon: #f7dc6f;
+  --cream: #fffbf0;
+  --text-main: #2c3e50;
+  --text-muted: #7f8c8d;
+}
+
+/* WRAPPER */
+.select-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* LABEL */
+.select-label {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.3rem;
+  color: var(--coral);
+  margin-left: 6px;
+}
+
+/* SELECT */
+.cuisine-select {
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 18px;
+  border: 2px solid var(--mint);
+  background: var(--cream);
+
+  font-family: "Poppins", sans-serif;
+  font-size: 0.95rem;
+  color: var(--text-main);
+
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+
+  /* Remove ugly default arrow (browser-safe) */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  /* Custom arrow */
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--coral) 50%),
+    linear-gradient(135deg, var(--coral) 50%, transparent 50%);
+  background-position:
+    calc(100% - 22px) calc(50% - 3px),
+    calc(100% - 16px) calc(50% - 3px);
+  background-size: 6px 6px;
+  background-repeat: no-repeat;
+}
+
+/* HOVER */
+.cuisine-select:hover {
+  border-color: var(--peach);
+}
+
+/* FOCUS */
+.cuisine-select:focus {
+  border-color: var(--coral);
+  box-shadow: 0 0 0 4px rgba(255, 107, 107, 0.15);
+  background-color: white;
+}
+
+/* OPTIONS */
+.cuisine-select option {
+  font-family: "Poppins", sans-serif;
+  color: var(--text-main);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .select-label {
+    font-size: 1.1rem;
+  }
+
+  .cuisine-select {
+    padding: 12px 16px;
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,74 @@
+.favorites-page {
+  position: relative;
+  min-height: 100vh;
+  background: #fffaf6;
+  padding: 80px 40px;
+  overflow: hidden;
+}
+
+/* CURVED BG */
+.favorites-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 55%;
+  width: 100%;
+  background: linear-gradient(
+    135deg,
+    #fff1e6 0%,
+    #ffe1cc 50%,
+    #ffd6b8 100%
+  );
+  border-bottom-left-radius: 100% 45%;
+  border-bottom-right-radius: 100% 45%;
+  z-index: 0;
+}
+
+/* CONTENT */
+.favorites-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* TITLE */
+.favorites-title {
+  font-family: "Dancing Script", cursive;
+  font-size: 3rem;
+  color: #ff6b3d;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* GRID */
+.favorites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 32px;
+}
+
+/* EMPTY STATE */
+.empty-state {
+  text-align: center;
+  margin-top: 120px;
+  color: #888;
+}
+
+.empty-state p {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.empty-state span {
+  font-size: 0.95rem;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .favorites-page {
+    padding: 60px 20px;
+  }
+
+  .favorites-title {
+    font-size: 2.4rem;
+  }
+}

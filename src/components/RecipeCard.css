@@ -1,0 +1,110 @@
+.food-card {
+  min-width: 220px;
+  background: linear-gradient(
+    180deg,
+    #fff6ee 0%,   /* soft peach */
+    #fde8d8 100%
+  );
+  border-radius: 20px;
+  padding: 16px;
+  padding-top: 80px; /* Space for the overflowing image */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  transition: all 0.35s ease;
+  position: relative;
+  margin-top: 60px; /* Give space for image to pop out */
+}
+
+.food-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
+}
+
+/* IMAGE */
+.food-image-wrapper {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #ffffff;
+  position: absolute;
+  top: -60px; /* Pop out above the card */
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border: 6px solid #fff;
+}
+
+.food-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* BODY */
+.food-card-body {
+  text-align: left;
+}
+
+/* TITLE */
+.food-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #2f2f2f;
+  line-height: 1.3;
+  margin-bottom: 8px;
+  
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* DESCRIPTION */
+.food-description {
+  font-size: 0.85rem;
+  color: 7a6f67;
+  line-height: 1.4;
+  margin-bottom: 12px;
+  
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* FOOTER */
+.food-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+/* BUTTON */
+.food-button {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff8a5c, #ff6b3d);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(255, 107, 61, 0.3);
+}
+
+.food-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(255, 107, 61, 0.4);
+}
+
+.food-button::after {
+  content: '+';
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 600;
+}

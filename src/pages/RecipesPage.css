@@ -1,0 +1,55 @@
+.recipes-page {
+  position: relative;
+  min-height: 100vh;
+  padding: 80px 40px;
+  background: #fffaf6;
+  overflow: hidden;
+}
+
+/* CURVED BACKGROUND */
+.recipes-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 55%;
+  width: 100%;
+  background: linear-gradient(
+    135deg,
+    #fff1e6 0%,
+    #ffe1cc 50%,
+    #ffd6b8 100%
+  );
+  border-bottom-left-radius: 100% 45%;
+  border-bottom-right-radius: 100% 45%;
+  z-index: 0;
+}
+
+/* CONTENT ABOVE BG */
+.recipes-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* TITLE */
+.recipes-title {
+  font-family: "Dancing Script", cursive;
+  font-size: 3rem;
+  color: #ff6b3d;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.details-top-bar {
+  position: sticky;
+  top: 20px;
+  z-index: 10;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ff6b3d;
+  cursor: pointer;
+  padding: 8px 0;
+}

@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&family=Poppins:wght@300;400;500&display=swap');
+
+:root {
+  --coral: #ff6b6b;
+  --peach: #ffa07a;
+  --mint: #98d8c8;
+  --lemon: #f7dc6f;
+  --cream: #fffbf0;
+  --text-main: #2c3e50;
+  --text-muted: #7f8c8d;
+}
+
+/* WRAPPER */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* LABEL */
+.input-label {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.3rem;
+  color: var(--coral);
+  margin-left: 6px;
+}
+
+/* INPUT */
+.ingredient-input {
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 18px;
+  border: 2px solid var(--mint);
+  background: var(--cream);
+
+  font-family: "Poppins", sans-serif;
+  font-size: 0.95rem;
+  color: var(--text-main);
+
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+/* PLACEHOLDER */
+.ingredient-input::placeholder {
+  color: var(--text-muted);
+  font-weight: 300;
+}
+
+/* FOCUS STATE */
+.ingredient-input:focus {
+  border-color: var(--coral);
+  box-shadow: 0 0 0 4px rgba(255, 107, 107, 0.15);
+  background: white;
+}
+
+/* HOVER (SUBTLE) */
+.ingredient-input:hover {
+  border-color: var(--peach);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .input-label {
+    font-size: 1.1rem;
+  }
+
+  .ingredient-input {
+    padding: 12px 16px;
+    font-size: 0.9rem;
+  }
+}
