@@ -5,10 +5,30 @@ Welcome to the Recipe Finder application! This app helps you discover new recipe
 ## Features
 
 - **Search by ingredients:** Input any ingredients you have, and find recipes that use them.
-- **Recipe categorization:** Explore various categories including vegetarian, vegan, gluten-free, and more.
+- **Recipe categorization:** Explore various categories including calories, countries.
 - **User-friendly interface:** Navigate through a clean and appealing user interface.
 - **Save favorites:** Bookmark your favorite recipes for easy access later.
 - **Detailed instructions:** Each recipe comes with step-by-step instructions and cooking times.
+  
+## Pages 
+
+1.Home Page
+
+<img width="1900" height="906" alt="image" src="https://github.com/user-attachments/assets/88789109-60dd-4a30-bdac-c3e4d4f414a2" />
+
+2.Finder Page
+
+<img width="1900" height="910" alt="image" src="https://github.com/user-attachments/assets/5e9c2d45-9218-46bc-afa8-8698408335bb" />
+
+3.Recipe Card & Recipe Details Page
+
+<img width="1880" height="650" alt="image" src="https://github.com/user-attachments/assets/f5e70c98-e477-4c68-aafd-7c3a5fca9cfc" />
+<img width="1832" height="899" alt="image" src="https://github.com/user-attachments/assets/76105318-3584-40e4-9e91-a84c162df632" />
+
+4.Favourites & History Page
+
+<img width="1891" height="891" alt="image" src="https://github.com/user-attachments/assets/35b6b1e8-52d7-4525-abe1-332222374ccb" />
+<img width="1896" height="897" alt="image" src="https://github.com/user-attachments/assets/aac3034c-05f6-4ca5-bb31-3f6afd7374ad" />
 
 ## Installation
 
@@ -41,12 +61,7 @@ To install and run the Recipe Finder application locally, follow these steps:
 
 We welcome contributions! If you would like to contribute to the Recipe Finder, please fork the repository and submit a pull request.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contact
 
-For any inquiries, please contact [Sandiya1](mailto:sandiya1@example.com).
-
-Happy cooking!
+For any inquiries, please contact [Sandiya1](mailto:sandiya1804@gmail.com).
