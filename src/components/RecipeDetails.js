@@ -1,7 +1,7 @@
 import React from "react";
 import StarRating from "./StarRating";
 import "./RecipeDetails.css";
-import { useNavigate } from "react-router-dom";
+
 
 
 export default function RecipeDetails({
@@ -102,3 +102,4 @@ export default function RecipeDetails({
     </div>
   );
 }
+
